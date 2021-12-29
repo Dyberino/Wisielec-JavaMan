@@ -28,7 +28,7 @@ public class Hangman{
                 System.out.print(word.charAt(i));
             }
             else{
-                System.out.print("_");
+                System.out.print("_ ");
             }
     }
     }
