@@ -8,12 +8,17 @@ import java.util.Scanner;
 import java.util.Locale;
 public class Hangman{
     public static void main(String[] args)throws FileNotFoundException{
+<<<<<<< HEAD
         Locale locale = new Locale("pl","PL");
         Scanner in = new Scanner(new File("JavaMan/WORDS.txt"),"UTF-8");
         Collator col = Collator.getInstance(locale);
         col.setStrength(Collator.PRIMARY);
         Scanner keyboard = new Scanner(System.in); 
 
+=======
+        Scanner in = new Scanner(new File("JavaMan/WORDS.txt"), "UTF-8");
+    
+>>>>>>> 9a5e0912094ddb804285df979b44a6698c287fe3
         List<String> words = new ArrayList<>();
         while (in.hasNextLine()){
             words.add(in.nextLine());
