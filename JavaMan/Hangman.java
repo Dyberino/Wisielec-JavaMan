@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Random;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
-import javax.swing.*;
 public class Hangman{
     public static void main(String[] args)throws FileNotFoundException{
         Scanner in = new Scanner(new File("JavaMan/WORDS.txt"));
