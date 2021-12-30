@@ -2,10 +2,12 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.EventQueue;
 import java.awt.Graphics;
+import java.awt.event.*;
 import javax.swing.CellRendererPane;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 public class Display extends JPanel {
 
@@ -14,11 +16,13 @@ public class Display extends JPanel {
         private JLabel renderer = new JLabel(s);
         private CellRendererPane crp = new CellRendererPane();
         private Dimension dim;
+        private static JTextField textInput = new JTextField("TextInput");
     
         public Display() {
             this.setBackground(Color.white);
             dim = renderer.getPreferredSize();
             this.add(crp);
+            
         }
     
         @Override
@@ -35,6 +39,7 @@ public class Display extends JPanel {
             JFrame f = new JFrame("Wisielec");
             f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             f.add(this);
+            f.add(textInput);
             f.pack();
             f.setSize(dim.width * N, dim.height * (N + 1));
             f.setLocationRelativeTo(null);

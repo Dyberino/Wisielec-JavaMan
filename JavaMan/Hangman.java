@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 public class Hangman{
     public static void main(String[] args)throws FileNotFoundException{
-        Scanner in = new Scanner(new File("JavaMan/WORDS.txt"));
+        Scanner in = new Scanner(new File("JavaMan/WORDS.txt"), "UTF-8");
     
         List<String> words = new ArrayList<>();
         while (in.hasNextLine()){
