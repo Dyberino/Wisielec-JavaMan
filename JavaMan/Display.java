@@ -12,11 +12,12 @@ import javax.swing.JTextField;
 public class Display extends JPanel {
 
         private static final int N = 8;
-        private static final String s = "<html><big><u>Hello</u></html>";
+        private static final String s = "<html>";
         private JLabel renderer = new JLabel(s);
         private CellRendererPane crp = new CellRendererPane();
         private Dimension dim;
-        private static JTextField textInput = new JTextField("TextInput");
+        
+       
     
         public Display() {
             this.setBackground(Color.white);
@@ -28,20 +29,26 @@ public class Display extends JPanel {
         @Override
         protected void paintComponent(Graphics g) {
             super.paintComponent(g);
-            // for (int i = 0; i < 1; i++) {
-            //     renderer.setForeground(Color.getHSBColor((float) i / N, 1, 1));
-            //     crp.paintComponent(g, renderer, this,
-            //         i * dim.width, i * dim.height, dim.width, dim.height);
-            // }
+            for (int i = 0; i < 1; i++) {
+                renderer.setForeground(Color.getHSBColor((float) i / N, 1, 1));
+                crp.paintComponent(g, renderer, this,
+                    i * dim.width, i * dim.height, dim.width, dim.height);
+            }
         }
     
         private void display() {
+            JTextField textInput = new JTextField("TextInput");
+            textInput.setBounds(50,100, 200,30);
+
+
             JFrame f = new JFrame("Wisielec");
             f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            f.setIconImage(image);
             f.add(this);
             f.add(textInput);
             f.pack();
-            f.setSize(dim.width * N, dim.height * (N + 1));
+            f.setSize(700, 700);
+            f.setResizable(false);
             f.setLocationRelativeTo(null);
             f.setVisible(true);
         }
