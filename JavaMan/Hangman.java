@@ -4,9 +4,10 @@ import java.util.List;
 import java.util.Random;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
+import javax.swing.*;
 public class Hangman{
     public static void main(String[] args)throws FileNotFoundException{
-        Scanner in = new Scanner(new File("C:/Users/karol/OneDrive/Pulpit/WORDS.txt"));
+        Scanner in = new Scanner(new File("JavaMan/WORDS.txt"));
     
         List<String> words = new ArrayList<>();
         while (in.hasNextLine()){
