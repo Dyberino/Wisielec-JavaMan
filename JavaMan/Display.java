@@ -129,7 +129,11 @@ public class Display extends JPanel implements ActionListener {
         Font fontGuess = new Font("Arial", Font.BOLD, 60);
 
         for (int i = 0; i < guess.length(); i++) {
-            correctedGuess += guess.charAt(i) + "\t";
+            if(i==guess.length()-1){
+                correctedGuess += guess.charAt(i);
+            }else{
+                correctedGuess += guess.charAt(i) + "\t";
+            }
         }
         correctedGuess = correctedGuess.replaceAll("\t", "  ");
         jl.setText(correctedGuess);
