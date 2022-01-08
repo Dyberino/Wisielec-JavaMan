@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Locale;
 
 import javax.lang.model.type.ExecutableType;
+import javax.swing.BorderFactory;
 import javax.swing.CellRendererPane;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -99,7 +100,8 @@ public class Display extends JPanel implements ActionListener {
         textInput.setLocale(locale);
         textInput.setColumns(2);
         textInput.setFont(fontTextInput);
-        textInput.setBackground(new Color(255, 0, 0));
+        textInput.setBackground(new Color(230, 230, 230));
+        textInput.setBorder(BorderFactory.createRaisedBevelBorder());
         textInput.setHorizontalAlignment(JTextField.CENTER);
 
         textInput.addActionListener(this);
