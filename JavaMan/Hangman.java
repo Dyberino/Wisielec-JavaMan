@@ -14,14 +14,22 @@ public class Hangman {
         Collator col = Collator.getInstance(locale);
         col.setStrength(Collator.PRIMARY);
         Scanner keyboard = new Scanner(System.in);
+        System.out.println("Tu komunikat ile graczy gra");
+        String game_mode = keyboard.nextLine();
+        String word;
+        if (game_mode.equals("1")) {
+            List<String> words = new ArrayList<>();
+            while (in.hasNextLine()) {
+                words.add(in.nextLine());
+            }
 
-        List<String> words = new ArrayList<>();
-        while (in.hasNextLine()) {
-            words.add(in.nextLine());
+            Random rand = new Random();
+            word = words.get(rand.nextInt(words.size()));
+
+        } else {
+            System.out.println("Enter word: ");
+            word = keyboard.nextLine();
         }
-
-        Random rand = new Random();
-        String word = words.get(rand.nextInt(words.size()));
 
         System.out.println(word);
         List<Character> guess = new ArrayList<>();
