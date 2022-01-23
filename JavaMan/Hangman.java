@@ -228,12 +228,16 @@ public class Hangman{
         
         @Override
         public void actionPerformed(ActionEvent e) {
-            clearWindow();
+            
+            if(textInputSelectGame.getText().length()>=1){
+                clearWindow();
+                Game game = new Game(f,textInputSelectGame.getText());
+                game.RunGame();
+                f.revalidate();
+                f.repaint();
+            }
 
-            Game game = new Game(f,textInputSelectGame.getText());
-            game.RunGame();
-            f.revalidate();
-            f.repaint();
+            
         }
     }
 }
