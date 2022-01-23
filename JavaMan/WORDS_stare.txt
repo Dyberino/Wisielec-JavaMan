@@ -247,6 +247,7 @@ alkoholowy
 alogiczny
 alpejski
 alternatywny
+alterocentryczny
 altruistyczny
 aluminiowy
 aluwialny
@@ -295,6 +296,7 @@ antenowy
 antropologiczny
 antyalkoholowy
 antyczny
+antyfaszystowski
 antykoncepcyjny
 antykorozyjny
 antykwaryczny
@@ -328,6 +330,7 @@ arbitralny
 archaiczny
 archanielski
 archeologiczny
+architektoniczny
 archiwalny
 arcydzielny
 arcykapłański
@@ -382,6 +385,7 @@ augustowski
 aukcyjny
 austriacki
 autentyczny
+autobiograficzny
 autobusowy
 autochtoniczny
 autodydaktyczny
@@ -418,6 +422,9 @@ bajeczny
 bajkowy
 bajroniczny
 bakteriobójczy
+bakteriolityczny
+bakteriologiczny
+bakteriostatyczny
 bakteryjny
 baletowy
 balistyczny
@@ -506,6 +513,7 @@ bezklasowy
 bezkolizyjny
 bezkompromisowy
 bezkonfliktowy
+bezkonkurencyjny
 bezkresny
 bezkrwawy
 bezkrwisty
@@ -547,6 +555,7 @@ bezpośredni
 bezpożyteczny
 bezprawny
 bezprecedensowy
+bezpretensjonalny
 bezproblemowy
 bezprocentowy
 bezprodukcyjny
@@ -699,6 +708,7 @@ borowy
 boski
 bosy
 botaniczny
+bożonarodzeniowy
 boży
 bramiasty
 bramkowy
@@ -797,6 +807,7 @@ całościowy
 cały
 cechowy
 ceglany
+ceglastoczerwony
 ceglasty
 celny
 celowy
@@ -816,6 +827,7 @@ cerkiewny
 cesarski
 chamski
 chaotyczny
+charakterystyczny
 charytatywny
 chałupniczy
 chciwy
@@ -996,6 +1008,7 @@ czartowski
 czarujący
 czasochłonny
 czasopiśmienny
+czasoprzestrzenny
 czasownikowy
 czasowy
 czcigodny
@@ -1025,6 +1038,7 @@ czterokrotny
 czteroletni
 czteroosobowy
 czteropiętrowy
+czterowartościowy
 cztery
 czubaty
 czubiasty
@@ -1117,6 +1131,8 @@ destrukcyjny
 destruktywny
 deszczowy
 detaliczny
+detektywistyczny
+deterministyczny
 dewizowy
 diabelny
 diabelski
@@ -1256,6 +1272,7 @@ drobiowy
 drobniusieńki
 drobniuteńki
 drobniutki
+drobnokrystaliczny
 drobnolistny
 drobnostkowy
 drobnowidowy
@@ -1310,7 +1327,10 @@ dwuczęściowy
 dwudniowy
 dwudomowy
 dwudzielny
+dwudziestoczterogodzinny
+dwudziestokrotny
 dwudziestoletni
+dwudziestowieczny
 dwudziesty
 dwufazowy
 dwugodzinny
@@ -1400,7 +1420,10 @@ dzienny
 dzierżawczy
 dzierżawny
 dziesiąty
+dziesięciodniowy
+dziesięciokrotny
 dziesięcioletni
+dziesięciominutowy
 dziesiętny
 dzietny
 dziewczynkowaty
@@ -1408,6 +1431,7 @@ dziewczyński
 dziewczęcy
 dziewiczy
 dziewiąty
+dziewiętnastowieczny
 dziewiętnasty
 dziewuchowaty
 dziki
@@ -1437,6 +1461,7 @@ dłużny
 dźwigowy
 dźwięczny
 dźwiękochłonny
+dźwiękonaśladowczy
 dźwiękoszczelny
 dźwiękowy
 dżdżysty
@@ -1471,6 +1496,7 @@ ekonomiczny
 ekranowy
 ekscentryczny
 ekskluzywny
+ekspansjonistyczny
 ekspansywny
 ekspedycyjny
 eksperymentalny
@@ -1489,6 +1515,7 @@ ekstensywny
 eksternistyczny
 eksterytorialny
 ekstraktywny
+ekstraordynaryjny
 ekstremalny
 ekumeniczny
 ekwipotencjalny
@@ -1496,9 +1523,14 @@ elastyczny
 elegancki
 elegijny
 elekcyjny
+elektroenergetyczny
+elektrokardiograficzny
 elektrolityczny
+elektromagnetyczny
 elektroniczny
 elektronowy
+elektrostatyczny
+elektrotechniczny
 elektryczny
 elementarny
 eliminacyjny
@@ -1587,6 +1619,7 @@ falowy
 familiarny
 familijny
 fanatyczny
+fantasmagoryczny
 fantastyczny
 fantazyjny
 farmaceutyczny
@@ -1607,6 +1640,7 @@ federalny
 feeryczny
 felietonowy
 fenomenalny
+fenomenologiczny
 feralny
 fermentacyjny
 fertyczny
@@ -1692,6 +1726,7 @@ fryzjerski
 fundacyjny
 fundamentalny
 fundamentowy
+funkcjonalistyczny
 funkcjonalny
 funkcyjny
 futbolowy
@@ -1706,6 +1741,8 @@ galaretowaty
 galicyjski
 galowy
 galwaniczny
+galwanoplastyczny
+galwanotechniczny
 gangsterski
 gapiowaty
 gapiowski
@@ -1951,6 +1988,7 @@ hipotetyczny
 hipsometryczny
 histeryczny
 histologiczny
+historiozoficzny
 historyczny
 hiszpański
 hitlerowski
@@ -1987,6 +2025,7 @@ hutniczy
 hybrydowy
 hydny
 hydrauliczny
+hydrogeologiczny
 hydrograficzny
 hydrotechniczny
 i
@@ -2017,12 +2056,14 @@ imigracyjny
 immanentny
 immunologiczny
 imperatywny
+imperialistyczny
 imperialny
 impertynencki
 impetyczny
 imponujący
 importowy
 impregnacyjny
+impresjonistyczny
 imprezowy
 improwizacyjny
 impulsowy
@@ -2037,6 +2078,7 @@ indukcyjny
 indyczy
 indyferentny
 indyjski
+indywidualistyczny
 indywidualny
 inercyjny
 infantylny
@@ -2075,6 +2117,7 @@ interesujący
 internowany
 interpretacyjny
 interpunkcyjny
+intersubiektywny
 interwencyjny
 intonacyjny
 intratni
@@ -2093,6 +2136,7 @@ inżynieryjny
 irański
 irlandzki
 ironiczny
+irracjonalistyczny
 irracjonalny
 irygacyjny
 iskrzysty
@@ -2169,6 +2213,7 @@ jednopiętrowy
 jednoplanowy
 jednoplemienny
 jednopostaciowy
+jednopłaszczyznowy
 jednopłciowy
 jednoraki
 jednorazowy
@@ -2337,15 +2382,20 @@ kilkakrotny
 kilkokrotny
 kilkoraki
 kilkudniowy
+kilkudziesięciokrotny
 kilkugodzinny
 kilkuletni
 kilkumetrowy
 kilkumiesięczny
+kilkunastodniowy
+kilkunastogodzinny
 kilkunastoletni
+kilkunastotysięczny
 kilkuosobowy
 kilkusetosobowy
 kilkutysięczny
 kilometrowy
+kinematograficzny
 kinetyczny
 kinowy
 kiszkowy
@@ -2429,6 +2479,7 @@ komiczny
 komisaryczny
 komisyjny
 komorowy
+komparatystyczny
 kompensacyjny
 kompetencyjny
 kompetentny
@@ -2459,6 +2510,7 @@ konchowy
 kondycyjny
 koneserski
 konferencyjny
+konfidencjonalny
 konfliktowy
 konformistyczny
 kongenialny
@@ -2490,9 +2542,11 @@ kontekstowy
 kontemplacyjny
 kontemplatywny
 kontraktowy
+kontrapunktyczny
 kontrastowy
 kontrolny
 kontrowersyjny
+kontrrewolucyjny
 konturowy
 kontuszowy
 kontynentalny
@@ -2519,6 +2573,7 @@ kordialny
 koreański
 korekcyjny
 korelacyjny
+korespondencyjny
 korny
 koronkowy
 koronny
@@ -2535,6 +2590,7 @@ kosmetyczny
 kosmiczny
 kosmopolityczny
 kosooki
+kostiumologiczny
 kostiumowy
 kostny
 kostyczny
@@ -2766,6 +2822,7 @@ lekkomyślny
 lekkowierny
 lekooporny
 leksykalny
+leksykograficzny
 leksykonowy
 lekutki
 leninowski
@@ -2898,7 +2955,9 @@ makabryczny
 makiaweliczny
 maklerski
 makowy
+makroekonomiczny
 makroskopowy
+maksymalistyczny
 maksymalny
 malarski
 maleńki
@@ -2949,7 +3008,9 @@ masywny
 maszynowy
 matczyny
 matematyczny
+materialistyczny
 materialny
+materiałochłonny
 materiałowy
 matowy
 matrymonialny
@@ -2962,7 +3023,9 @@ małodzietny
 małoletni
 małoletny
 małolitrażowy
+małomiasteczkowy
 małomiejski
+małomieszczański
 małomówny
 małopolski
 małorolny
@@ -3040,6 +3103,8 @@ migdałowy
 migotliwy
 migracyjny
 mijany
+mikrobiologiczny
+mikroekonomiczny
 mikroskopiczny
 mikroskopijny
 mikroskopowy
@@ -3095,11 +3160,15 @@ mięciutki
 międzybranżowy
 międzygwiazdowy
 międzygwiezdny
+międzykontynentalny
 międzymiastowy
 międzynarodowy
+międzyparlamentarny
+międzyplanetarny
 międzyresortowy
 międzyrządowy
 międzyszkolny
+międzyuczelniany
 międzywojenny
 międzyzakładowy
 miękki
@@ -3144,8 +3213,10 @@ monarchistyczny
 monarszy
 monetarny
 mongolski
+monochromatyczny
 monogamiczny
 monograficzny
+monokrystaliczny
 monolitowy
 monolityczny
 monopoliczny
@@ -3240,6 +3311,7 @@ nabywczy
 nachalny
 naciekowy
 naciskowy
+nacjonalistyczny
 naczelny
 naczyniowy
 nadaremny
@@ -3410,6 +3482,7 @@ niechciwy
 niechcący
 niechlubny
 niechlujny
+niechrześcijański
 niechwalebny
 niechybny
 niechętny
@@ -3467,11 +3540,13 @@ niedrogi
 niedrożny
 nieduży
 niedwuznaczny
+niedyplomatyczny
 niedyskretny
 niedzielny
 niedługi
 niedługowieczny
 niedźwiedzi
+niedźwiedziowaty
 nieefektowny
 nieekonomiczny
 nieelegancki
@@ -3518,6 +3593,7 @@ niejednolity
 niejednorodny
 niejednostajny
 niejednoznaczny
+niekaligraficzny
 niekaralny
 niekarny
 niekoleżeński
@@ -3601,6 +3677,7 @@ nieodległy
 nieodmienny
 nieodparty
 nieodpowiedni
+nieodpowiedzialny
 nieodpłatny
 nieodrodny
 nieodstępny
@@ -3624,6 +3701,7 @@ nieopisany
 nieopowiedziany
 nieopłacalny
 nieorganiczny
+nieortograficzny
 nieoryginalny
 nieosiągalny
 nieosobowy
@@ -3633,6 +3711,7 @@ nieożywiony
 niepalny
 niepalący
 niepamiętny
+nieparlamentarny
 nieparzysty
 niepaństwowy
 niepewny
@@ -3655,6 +3734,7 @@ niepoczytalny
 niepoczytny
 niepodatny
 niepodejrzany
+niepodległościowy
 niepodległy
 niepodobny
 niepodważalny
@@ -3701,6 +3781,7 @@ niepożyteczny
 niepożyty
 niepożądany
 niepraktyczny
+nieprawdopodobny
 nieprawdziwy
 nieprawidłowy
 nieprawny
@@ -3711,12 +3792,14 @@ nieprawy
 nieprecyzyjny
 nieprodukcyjny
 nieproduktywny
+nieproporcjonalny
 nieproszony
 nieprzebrany
 nieprzeciętny
 nieprzedajny
 nieprzejednany
 nieprzejrzysty
+nieprzekraczalny
 nieprzekupny
 nieprzekładalny
 nieprzemakalny
@@ -3726,15 +3809,22 @@ nieprzemijalny
 nieprzenikliwy
 nieprzenikniony
 nieprzenoszalny
+nieprzepuszczalny
 nieprzerwany
 nieprzerywalny
 nieprzespany
 nieprzestanny
+nieprzetłumaczalny
+nieprzewidywalny
 nieprzewidziany
 nieprzezorny
+nieprzezroczysty
+nieprzezwyciężony
 nieprzełamany
+nieprześcigniony
 nieprzychylny
 nieprzydatny
+nieprzyjacielski
 nieprzyjazny
 nieprzyjemny
 nieprzymuszony
@@ -3768,6 +3858,7 @@ nierozkładalny
 nierozmowny
 nierozmyślny
 nierozplątany
+nierozpuszczalny
 nierozsądny
 nieroztropny
 nierozumny
@@ -3775,6 +3866,7 @@ nierozważny
 nierozwikłany
 nierozwinięty
 nierozwiązalny
+nierozwiązywalny
 nierozłączny
 nieruchawy
 nieruchliwy
@@ -3789,6 +3881,7 @@ nierzetelny
 nierządny
 nierównoboczny
 nierównomierny
+nierównosylabowy
 nierówny
 niesamodzielny
 niesamoistny
@@ -3846,6 +3939,7 @@ nieswojski
 niesworny
 niesymetryczny
 niesympatyczny
+niesystematyczny
 niesyty
 nieszablonowy
 nieszczególny
@@ -3897,6 +3991,7 @@ nieufny
 nieugaszony
 nieugięty
 nieukojony
+nieukontentowany
 nieukładny
 nieuleczalny
 nieuległy
@@ -3940,6 +4035,7 @@ niewprawny
 niewrażliwy
 niewspółczesny
 niewspółmierny
+niewstrzemięźliwy
 niewstrzymany
 niewybaczalny
 niewybredny
@@ -3955,15 +4051,18 @@ niewymowny
 niewymuszony
 niewymówny
 niewyobrażalny
+niewypowiedziany
 niewypłacalny
 niewypłatny
 niewyraźny
 niewyrażalny
 niewyrozumiały
 niewysoki
+niewystarczający
 niewysłowiony
 niewytrawny
 niewytworny
+niewytłumaczalny
 niewywrotny
 niewzajemny
 niewzruszalny
@@ -4002,6 +4101,7 @@ niezdecydowany
 niezdolny
 niezdrowy
 niezdrożny
+niezdyscyplinowany
 niezgodny
 niezgrabny
 niezgłębiony
@@ -4382,6 +4482,7 @@ oportunistyczny
 opozycyjny
 oprawny
 opryskliwy
+optoelektroniczny
 optyczny
 optymalny
 optymistyczny
@@ -4398,6 +4499,7 @@ oratoryjny
 orbitalny
 ordynarny
 ordynaryjny
+organicznikowski
 organiczny
 organizacyjny
 organoleptyczny
@@ -4558,10 +4660,12 @@ parotysięczny
 parowy
 parszywy
 partacki
+partenogenetyczny
 parterowy
 partyjny
 partyzancki
 paryski
+parzystoczłonowy
 parzystokopytny
 parzysty
 pasażerski
@@ -4669,6 +4773,7 @@ pieszczony
 pieszczotliwy
 pieszy
 pietystyczny
+piezoelektryczny
 pieściwy
 pieśniowy
 pijacki
@@ -4937,7 +5042,9 @@ poprzeczny
 poprzedni
 poprzedniczy
 poprzedzający
+popularnonaukowy
 popularny
+popularyzatorski
 populistyczny
 popędliwy
 poradny
@@ -5056,6 +5163,7 @@ pozaksięgowy
 pozalekcyjny
 pozamuzyczny
 pozanaukowy
+pozaparlamentarny
 pozaszkolny
 pozasłużbowy
 pozazawodowy
@@ -5144,6 +5252,7 @@ prewentywny
 prezydencki
 prezydialny
 priorytetowy
+probabilistyczny
 probierczy
 problematyczny
 problemowy
@@ -5169,6 +5278,7 @@ projektujący
 proklityczny
 prokuratorski
 proletariacki
+promieniotwórczy
 promieniowy
 promienisty
 promienny
@@ -5184,6 +5294,7 @@ prostoduszny
 prostokątny
 prostolinijny
 prostoliniowy
+prostopadłościenny
 prostopadły
 prosty
 proszalny
@@ -5191,6 +5302,7 @@ proszkowy
 proszący
 protegowany
 protekcjonalny
+protekcjonistyczny
 protekcyjny
 protestacyjny
 protestancki
@@ -5231,10 +5343,13 @@ przeciwbólowy
 przeciwległy
 przeciwlotniczy
 przeciwny
+przeciwodblaskowy
 przeciwpancerny
+przeciwpowodziowy
 przeciwpożarowy
 przeciwprężny
 przeciwstawny
+przeciwsłoneczny
 przeciwwskazany
 przeciągły
 przecięciowy
@@ -5246,6 +5361,7 @@ przeczysty
 przeczący
 przedajny
 przedawniony
+przedhistoryczny
 przedmałżeński
 przedmiejski
 przedmiotowy
@@ -5255,6 +5371,7 @@ przedpotopowy
 przedpołudniowy
 przedpremierowy
 przedprątny
+przedrewolucyjny
 przedsenny
 przedsiewny
 przedsiębierczy
@@ -5445,6 +5562,7 @@ przyostry
 przypadkowy
 przypochlebny
 przypodobany
+przypowierzchniowy
 przypuszczalny
 przyrodniczy
 przyrodzony
@@ -5572,6 +5690,7 @@ półobłąkany
 półoficjalny
 półokrągły
 półosmy
+półprzewodnikowy
 półprzytomny
 półpłynny
 półroczny
@@ -5585,21 +5704,26 @@ półurzędowy
 półświadomy
 półżartobliwy
 półósmy
+późnośredniowieczny
 późny
 rabi
 rabunkowy
 rabusiowski
 rachityczny
 rachunkowy
+racjonalistyczny
 racjonalny
 radarowy
 radiacyjny
 radialny
 radioaktywny
+radioelektroniczny
 radioizotopowy
+radiokomunikacyjny
 radioliniowy
 radiologiczny
 radiolokacyjny
+radiotelefoniczny
 radiotoksyczny
 radiowy
 radny
@@ -5686,6 +5810,7 @@ reporterski
 represyjny
 reprezentacyjny
 reprezentatywny
+reprywatyzacyjny
 republikancki
 republikański
 resortowy
@@ -5698,6 +5823,7 @@ retrospektywny
 rewanżowy
 rewelacyjny
 rewindykacyjny
+rewizjonistyczny
 rewizyjny
 rewolucyjny
 rezerwowy
@@ -5767,6 +5893,7 @@ rozdrażniony
 rozdrzymany
 rozdygotany
 rozdzielczy
+rozdzielnopłciowy
 rozdzielny
 rozdzierający
 rozdąsany
@@ -5812,6 +5939,7 @@ rozpasany
 rozpierzchły
 rozpolitykowany
 rozporządzalny
+rozpowszechniony
 rozpoznawalny
 rozpoznawczy
 rozprowadzający
@@ -5918,6 +6046,7 @@ rzutki
 rzutny
 rzutowy
 rzymski
+rzymskokatolicki
 rządny
 rządowy
 rządzący
@@ -6008,6 +6137,7 @@ samosterowny
 samotniczy
 samotny
 samowolny
+samowystarczalny
 samowładczy
 samowładny
 samozachowawczy
@@ -6089,6 +6219,7 @@ siatkowy
 sieciowy
 sieczny
 siedemdziesiąty
+siedemnastoletni
 siedemnasty
 siedmiodniowy
 siedmiogodzinny
@@ -6206,6 +6337,7 @@ sobkowski
 sobolowy
 soborowy
 sobotni
+socjaldemokratyczny
 socjalistyczny
 socjalny
 socjologiczny
@@ -6338,6 +6470,7 @@ statyczny
 statystyczny
 stawowy
 stałocieplny
+stałoprzecinkowy
 stały
 stenograficzny
 stereofoniczny
@@ -6359,6 +6492,7 @@ stosowalny
 stosowany
 stosowny
 stosunkowy
+stowarzyszeniowy
 stowarzyszony
 stołeczny
 stołowy
@@ -6410,6 +6544,7 @@ stylowy
 stypendialny
 stłumiony
 stęchły
+subiektywistyczny
 subiektywny
 substancjalny
 subsydiarny
@@ -6526,11 +6661,14 @@ szemrany
 szeregowy
 szeroki
 szerokotorowy
+szesnastowieczny
 szesnasty
 szewski
 sześcienny
 sześciokonny
 sześciokrotny
+sześciomiesięczny
+sześciotygodniowy
 sześćdziesiąty
 szkaradny
 szkarłatny
@@ -6674,9 +6812,11 @@ tektoniczny
 tekturowy
 telefoniczny
 telegraficzny
+telekomunikacyjny
 teleksowy
 telepatyczny
 teleskopowy
+teletransmisyjny
 telewizyjny
 tematowy
 tematyczny
@@ -6692,6 +6832,7 @@ terenowy
 termiczny
 terminologiczny
 terminowy
+termoelektryczny
 terrorystyczny
 terytorialny
 testamentarny
@@ -6723,6 +6864,7 @@ towarowy
 towarzyski
 tożsamościowy
 tożsamy
+tradycjonalistyczny
 tradycjonalny
 tradycyjny
 trafny
@@ -6839,6 +6981,7 @@ tęskliwy
 tęskny
 ubezpieczeniowy
 ubezpieczony
+ubezwłasnowolniony
 ubiegłoroczny
 uboczny
 ubogi
@@ -6985,6 +7128,7 @@ utlenialny
 utleniony
 utopijny
 utylitarny
+utylitarystyczny
 uważny
 uwiedziony
 uwinny
@@ -7055,6 +7199,7 @@ ważny
 wchodzący
 wcielony
 wczasowy
+wczesnośredniowieczny
 wczesny
 wcześny
 wczorajszy
@@ -7080,6 +7225,7 @@ weselny
 wesołkowaty
 wesoły
 weterynaryjny
+wewnątrzpartyjny
 wewnętrzny
 wezbrany
 wełniany
@@ -7091,6 +7237,7 @@ wiarygodny
 wiatropylny
 wiatrosiewny
 wibracyjny
+wiceprzewodniczący
 wicherkowaty
 wichrowaty
 widełki
@@ -7120,9 +7267,11 @@ wielkanocny
 wielki
 wielkoduszny
 wielkomiejski
+wielkomocarstwowy
 wielkomyślny
 wielkopański
 wielkopolski
+wielkoprzemysłowy
 wielkoświatowy
 wielmożny
 wielobarwny
@@ -7153,6 +7302,7 @@ wielopiętrowy
 wieloplanowy
 wielopostaciowy
 wielopoziomowy
+wielopłaszczyznowy
 wieloraki
 wielorodny
 wielorodzinny
@@ -7163,6 +7313,8 @@ wielotomowy
 wielotorowy
 wielotysięczny
 wielowarstwowy
+wielowarsztatowy
+wielowartościowy
 wielowiekowy
 wielowymiarowy
 wielowyrazowy
@@ -7292,6 +7444,7 @@ wspólny
 współczesny
 współmierny
 współobecny
+współodpowiedzialny
 współosiowy
 współplemienny
 współrzędny
@@ -7316,6 +7469,7 @@ wszawy
 wszechludzki
 wszechmocny
 wszechobecny
+wszechogarniający
 wszechpolski
 wszechpotężny
 wszechstronny
@@ -7325,6 +7479,7 @@ wszelaki
 wszelki
 wszeteczny
 wszystkostronny
+wszystkowiedzący
 wszyściuteńki
 wszyściutki
 wszyściuśki
@@ -7441,6 +7596,10 @@ wysiłkowy
 wyskokowy
 wysmukły
 wysoki
+wysokokaloryczny
+wysokonapięciowy
+wysokoprocentowy
+wysokowartościowy
 wysokowydajny
 wyspiarski
 wysportowany
@@ -7458,6 +7617,7 @@ wyszczekany
 wyszukany
 wytrawny
 wytrwały
+wytrzymałościowy
 wytrzymały
 wytworny
 wytwórczy
@@ -7552,6 +7712,7 @@ zabytkowy
 zabłąkany
 zabójczy
 zachodni
+zachodnioniemiecki
 zachodny
 zachowawczy
 zachłanny
@@ -7804,6 +7965,7 @@ zdradliwy
 zdradny
 zdradziecki
 zdrobniały
+zdroworozsądkowy
 zdrowotny
 zdrowy
 zdrożny
@@ -7891,6 +8053,7 @@ znamionowy
 znany
 znerwicowany
 zniechęcony
+zniecierpliwiony
 zniewieściały
 znikliwy
 znikomy
@@ -8060,6 +8223,7 @@ zębowy
 średniowieczny
 średniowiekowy
 średniozamożny
+średnioziarnisty
 środkowy
 środowiskowy
 środowy
@@ -8070,6 +8234,7 @@ zębowy
 śródmiejski
 śródmięśniowy
 śródskórny
+śródziemnomorski
 śródżylny
 świadomościowy
 świadomy
@@ -8244,6 +8409,7 @@ ankietyzować
 ankrować
 anonsować
 antedatować
+antropomorfizować
 antycypować
 antydatować
 antykizować
@@ -8271,6 +8437,7 @@ argumentować
 aromatyzować
 artykułować
 artystować
+arystokratyzować
 asekurować
 asenizować
 asfaltować
@@ -8285,6 +8452,7 @@ atestować
 atomizować
 atutować
 auskultować
+autobiografizować
 autolizować
 automatyzować
 autonomizować
@@ -8342,6 +8510,7 @@ besemerować
 besować
 betonować
 białkować
+bibliotekarzować
 bibować
 biczować
 biedować
@@ -8509,6 +8678,7 @@ debetować
 debiutować
 decentralizować
 decentrować
+dechrystianizować
 decydować
 decymować
 dedukować
@@ -8549,6 +8719,7 @@ delektować
 deliberować
 demagogizować
 demaskować
+dematerializować
 dementować
 demeszkować
 demitologizować
@@ -8560,6 +8731,7 @@ demonstrować
 demontować
 demoralizować
 demulgować
+denacjonalizować
 denaturalizować
 denaturować
 denazalizować
@@ -8646,6 +8818,7 @@ dokonywać
 dokooptować
 dokopywać
 doktoryzować
+dokumentalizować
 dokumentować
 dokupować
 dokupywać
@@ -8802,6 +8975,7 @@ dyskwalifikować
 dyslokować
 dysocjować
 dysonować
+dyspalatalizować
 dyspensować
 dysponować
 dysputować
@@ -9164,6 +9338,7 @@ indoktrynować
 indosować
 indukować
 indykować
+indywidualizować
 infantylizować
 infekować
 infiltrować
@@ -9184,10 +9359,12 @@ inspirować
 instalować
 instrumentować
 instruować
+instytucjonalizować
 insynuować
 intabulować
 intarsjować
 integrować
+intelektualizować
 intensyfikować
 interesować
 interferować
@@ -9423,6 +9600,7 @@ kontować
 kontrahować
 kontraktować
 kontrapunktować
+kontrargumentować
 kontrastować
 kontrasygnować
 kontratakować
@@ -9433,6 +9611,7 @@ kontuzjować
 kontyngentować
 kontynuować
 konusować
+konwencjonalizować
 konweniować
 konwersować
 konwertować
@@ -9520,6 +9699,7 @@ kursować
 kurtyzować
 kutnerować
 kwalifikować
+kwatermistrzować
 kwaterować
 kwestionować
 kwestować
@@ -9656,6 +9836,7 @@ melanżować
 meldować
 melinować
 meliorować
+melodramatyzować
 melorecytować
 mendlować
 mentorować
@@ -9704,6 +9885,7 @@ monologować
 monopolizować
 monotonizować
 montować
+monumentalizować
 moralizować
 mordować
 morfinizować
@@ -9864,6 +10046,7 @@ napracować
 naprawować
 naprodukować
 napromieniować
+napromieniowywać
 naprostować
 naprostowywać
 napryskiwać
@@ -10114,6 +10297,7 @@ odarniować
 odarnować
 odbalastować
 odbekiwać
+odbiurokratyzować
 odblokować
 odblokowywać
 odbrązować
@@ -10124,6 +10308,7 @@ odburkiwać
 odbłyskiwać
 odcałować
 odcelebrować
+odcharakteryzować
 odcharkiwać
 odchorować
 odchowywać
@@ -10175,6 +10360,7 @@ odhodować
 odholować
 odhukiwać
 odhumanizować
+odindywidualizować
 odizolować
 odizolowywać
 odkapslować
@@ -10212,6 +10398,7 @@ odmetaforyzować
 odmetanować
 odmetanowywać
 odmineralizować
+odmineralizowywać
 odminować
 odmitologizować
 odmotywać
@@ -10316,6 +10503,7 @@ odtarować
 odtelegrafować
 odtokować
 odtransportować
+odtransportowywać
 odtrokować
 odtłukiwać
 odwikływać
@@ -10564,9 +10752,11 @@ parlandować
 parlować
 parobkować
 parodiować
+paroksytonizować
 parować
 partnerować
 partycypować
+partykularyzować
 partyzantować
 pasażować
 pasjonować
@@ -10679,6 +10869,7 @@ pocałować
 pocechować
 pocerować
 pocertować
+pocharakteryzować
 pochlipywać
 pochorować
 pochrapywać
@@ -10750,6 +10941,7 @@ podpisywać
 podpiłować
 podpiłowywać
 podporządkować
+podporządkowywać
 podpytywać
 podrapować
 podratować
@@ -11294,6 +11486,7 @@ przebumelować
 przebąkiwać
 przebłagiwać
 przebłyskiwać
+przecharakteryzować
 przechorować
 przechorowywać
 przechowywać
@@ -11310,17 +11503,21 @@ przedeklamować
 przedestylować
 przedmuchiwać
 przedozować
+przedramatyzować
 przedrukować
 przedrukowywać
 przedrwiwać
 przedrylować
 przedukiwać
 przedyktować
+przedyplomatyzować
 przedyskutować
 przedysputować
+przedziesiątkować
 przedziurkować
 przeegzaminować
 przeekspediować
+przeeksperymentować
 przeeksponować
 przeestetyzować
 przefajkować
@@ -11330,6 +11527,7 @@ przefarbować
 przefasonować
 przefasować
 przefermentować
+przefermentowywać
 przefilozofować
 przefiltrować
 przefiltrowywać
@@ -11343,7 +11541,9 @@ przegadywać
 przegalopować
 przegarbować
 przegarować
+przegimnastykować
 przegniwać
+przegospodarować
 przegotować
 przegotowywać
 przegranulować
@@ -11361,7 +11561,10 @@ przehartowywać
 przeholować
 przeholowywać
 przeidealizować
+przeinstrumentować
 przeinstruować
+przeintelektualizować
+przeinterpretować
 przeinwestować
 przejednywać
 przejmować
@@ -11374,27 +11577,35 @@ przekartkować
 przekartować
 przekazywać
 przekiblować
+przeklasyfikować
 przekoczować
 przekodować
 przekolorowywać
 przekoloryzować
 przekomponować
+przekomponowywać
 przekompostować
 przekonstruować
 przekonsultować
+przekontrastować
 przekontrolować
+przekontrolowywać
 przekonywać
 przekopiować
 przekopywać
 przekoziołkować
 przekołować
 przekpiwać
+przekrystalizować
 przekrywać
 przekrzykiwać
 przekrzyżować
 przeksięgować
 przekupywać
+przekwalifikować
+przekwalifikowywać
 przekwaterować
+przekwaterowywać
 przekąsywać
 przekłusować
 przelamentować
@@ -11406,6 +11617,7 @@ przelicytowywać
 przeliterować
 przemacerować
 przemaglować
+przemagnesowywać
 przemalować
 przemalowywać
 przemanewrować
@@ -11435,6 +11647,8 @@ przenicować
 przenicowywać
 przenocować
 przeorganizować
+przeorganizowywać
+przeorkiestrować
 przeorować
 przeorywać
 przepadywać
@@ -11467,6 +11681,7 @@ przeprawować
 przeprocesować
 przeprofilować
 przeprojektować
+przeprojektowywać
 przepróżnować
 przepytywać
 przepłakiwać
@@ -11489,6 +11704,7 @@ przerysowywać
 przerąbywać
 przerębywać
 przesegregować
+przeselekcjonować
 przesiadywać
 przeskakiwać
 przeskalować
@@ -11529,8 +11745,14 @@ przetasować
 przetasowywać
 przetelefonować
 przetentegować
+przeteoretyzować
 przeterminować
 przetorować
+przetransfigurować
+przetransformować
+przetransponować
+przetransportować
+przetransportowywać
 przetrasować
 przetrasowywać
 przetratować
@@ -11544,9 +11766,12 @@ przeucztować
 przewalcować
 przewalcowywać
 przewartować
+przewartościować
+przewartościowywać
 przewałkować
 przewekslować
 przewentylować
+przewentylowywać
 przewertować
 przewiadywać
 przewidywać
@@ -11612,6 +11837,7 @@ przyklajstrować
 przyklaskiwać
 przyklepywać
 przyklękiwać
+przykomenderować
 przykołować
 przykrywać
 przykrępować
@@ -11637,6 +11863,7 @@ przypasować
 przypasywać
 przypatrywać
 przypieczętować
+przypieczętowywać
 przypikować
 przypilnować
 przypilnowywać
@@ -11670,6 +11897,7 @@ przyszywać
 przysłuchiwać
 przysługiwać
 przytakiwać
+przytransportować
 przytrzaskiwać
 przytrzymywać
 przytupywać
@@ -11695,6 +11923,7 @@ próbować
 próżnować
 pseudonimować
 psotować
+psychoanalizować
 psychologizować
 ptaszkować
 publikować
@@ -11823,6 +12052,7 @@ rewindykować
 rewizytować
 rewokować
 rewoltować
+rewolucjonizować
 rezerwować
 rezonować
 rezydować
@@ -11848,6 +12078,7 @@ rozbryzgiwać
 rozbudować
 rozbudowywać
 rozbłyskiwać
+rozcharakteryzować
 rozchlapywać
 rozchlustywać
 rozchodować
@@ -11878,6 +12109,7 @@ rozdłubywać
 rozegrywać
 rozegzaltować
 rozegzaltowywać
+rozentuzjazmować
 rozfalować
 rozfanatyzować
 rozfanfarować
@@ -11894,7 +12126,9 @@ rozgmatwywać
 rozgniwać
 rozgorywać
 rozgorączkować
+rozgorączkowywać
 rozgospodarować
+rozgospodarowywać
 rozgotować
 rozgotowywać
 rozgrupować
@@ -11921,6 +12155,7 @@ rozkloszować
 rozkochiwać
 rozkolportować
 rozkonspirować
+rozkonspirowywać
 rozkopcować
 rozkopcowywać
 rozkopywać
@@ -11969,6 +12204,7 @@ rozpasywać
 rozpatrywać
 rozperorować
 rozpieczętować
+rozpieczętowywać
 rozpierzchiwać
 rozpikować
 rozpisywać
@@ -12097,6 +12333,7 @@ sanować
 saprofitować
 satynować
 satyryzować
+satysfakcjonować
 scałkować
 scałować
 scałowywać
@@ -12106,9 +12343,11 @@ scentralizować
 scentrować
 schamityzować
 schaotyzować
+scharakteryzować
 schematyzować
 scholerować
 schorować
+schrystianizować
 scukrować
 scyklinować
 sczesywać
@@ -12157,6 +12396,7 @@ sfotografować
 sfrajerować
 sfrezować
 sfugować
+sfunkcjonalizować
 sfuszerować
 siadywać
 siarczkować
@@ -12224,6 +12464,7 @@ skomasować
 skombinować
 skomenderować
 skomentować
+skomercjalizować
 skompensować
 skompilować
 skompletować
@@ -12240,6 +12481,7 @@ skonfiskować
 skonfrontować
 skonkretyzować
 skonsolidować
+skonsonantyzować
 skonspirować
 skonstatować
 skonsternować
@@ -12253,6 +12495,7 @@ skontrolować
 skontrować
 skonturować
 skontyngentować
+skonwencjonalizować
 skonwertować
 skooperować
 skoordynować
@@ -12262,6 +12505,7 @@ skorelować
 skorodować
 skorumpować
 skorygować
+skosmopolityzować
 skoszarować
 skosztować
 skotłować
@@ -12353,6 +12597,7 @@ spolaryzować
 spolerować
 spoliczkować
 spolimeryzować
+spolitechnizować
 spolonizować
 spopularyzować
 sporować
@@ -12377,6 +12622,7 @@ sprecyzować
 sprefabrykować
 spreparować
 sprofanować
+sprofesjonalizować
 sprofilować
 sprokurować
 sproletaryzować
@@ -12387,6 +12633,7 @@ sprostowywać
 sprostytuować
 sproszkować
 sproszkowywać
+sprowincjonalizować
 sprowokować
 sprozaizować
 sprymitywizować
@@ -12451,6 +12698,7 @@ strenować
 stresować
 strofować
 stropować
+strukturalizować
 strumieniować
 strychować
 stryplować
@@ -12647,6 +12895,7 @@ torfować
 torować
 torpedować
 torturować
+tradycjonalizować
 tragizować
 trajlować
 traktować
@@ -12698,6 +12947,7 @@ ubrylantować
 ubrązować
 ubłagiwać
 ucałować
+ucharakteryzować
 uchwytywać
 ucywilizować
 ucztować
@@ -12802,6 +13052,7 @@ upozowywać
 uprasować
 uprowiantować
 uprzywilejować
+uprzywilejowywać
 upudrować
 upunktować
 upłakiwać
@@ -12816,6 +13067,7 @@ urzutować
 urzędować
 uróżować
 usankcjonować
+usatysfakcjonować
 uschematyzować
 usiłować
 uskakiwać
@@ -12989,6 +13241,7 @@ wskazywać
 współbudować
 współbytować
 współdecydować
+współkształtować
 współpracować
 współprzeżywać
 współredagować
@@ -13169,6 +13422,7 @@ wyjustować
 wyjękiwać
 wykadrować
 wykaligrafować
+wykaligrafowywać
 wykalkulować
 wykalkulowywać
 wykantować
@@ -13212,6 +13466,7 @@ wykreować
 wykropkować
 wykropkowywać
 wykrystalizować
+wykrystalizowywać
 wykrywać
 wykrzesywać
 wykrzykiwać
@@ -13350,6 +13605,7 @@ wyprocesowywać
 wyprodukować
 wyprofilować
 wypromieniować
+wypromieniowywać
 wypromować
 wyprorokować
 wyprostować
@@ -13661,6 +13917,7 @@ zacementować
 zacentrować
 zacerować
 zachlapywać
+zachloroformować
 zachlorować
 zachorować
 zachowywać
@@ -13735,6 +13992,7 @@ zagazować
 zagipsować
 zagniwać
 zagospodarować
+zagospodarowywać
 zagotować
 zagotowywać
 zagrabywać
@@ -13780,6 +14038,7 @@ zainterpelować
 zainterweniować
 zaintonować
 zaintrygować
+zainwentaryzować
 zainwestować
 zaiperytować
 zaizolować
@@ -14150,6 +14409,7 @@ zbelować
 zbielicować
 zbigować
 zbilansować
+zbiurokratyzować
 zblamować
 zblatować
 zblokować
@@ -14173,6 +14433,7 @@ zbytkować
 zbywać
 zbzikować
 zbójnikować
+zdecentralizować
 zdecydować
 zdefasonować
 zdefektować
@@ -14196,7 +14457,9 @@ zdekoncentrować
 zdekonspirować
 zdelegalizować
 zdemaskować
+zdematerializować
 zdementować
+zdemilitaryzować
 zdemobilizować
 zdemokratyzować
 zdemolować
@@ -14205,7 +14468,10 @@ zdemontować
 zdemoralizować
 zdenacyfikować
 zdenerwować
+zdepalatalizować
+zdepersonalizować
 zdeponować
+zdepopularyzować
 zdeprawować
 zdeprecjonować
 zdeprymować
@@ -14215,6 +14481,7 @@ zdetronizować
 zdewaloryzować
 zdewaluować
 zdewastować
+zdezaktualizować
 zdezawuować
 zdezelować
 zdezerterować
@@ -14243,9 +14510,12 @@ zdynamizować
 zdyscyplinować
 zdyskontować
 zdyskredytować
+zdyskwalifikować
 zdysocjować
+zdyspalatalizować
 zdystansować
 zdziesiątkować
+zegzemplifikować
 zekranizować
 zekscerpować
 zelektryfikować
@@ -14295,6 +14565,7 @@ zgeneralizować
 zgeometryzować
 zgermanizować
 zgilotynować
+zglajchszaltować
 zgorączkować
 zgotować
 zgotowywać
@@ -14331,9 +14602,13 @@ zilustrować
 zimitować
 zimować
 zindeksować
+zindustrializować
+zindywidualizować
 zinfantylizować
 zinstrumentować
+zinstytucjonalizować
 zintegrować
+zintelektualizować
 zintensyfikować
 zinterpretować
 zinwentaryzować
@@ -14389,6 +14664,7 @@ zmechanizować
 zmegafonizować
 zmeliorować
 zmendlować
+zmerkantylizować
 zmetaforyzować
 zmetamorfizować
 zmetryzować
@@ -14411,6 +14687,7 @@ zmodyfikować
 zmongolizować
 zmonopolizować
 zmontować
+zmonumentalizować
 zmordować
 zmorfologizować
 zmotoryzować
@@ -14428,6 +14705,7 @@ znamionować
 znarkotyzować
 znaturalizować
 znekrotyzować
+zneurastenizować
 zneutralizować
 znitować
 znitrować
@@ -14478,6 +14756,7 @@ zrejterować
 zrekapitulować
 zrekompensować
 zrekonstruować
+zrekrystalizować
 zrektyfikować
 zrelacjonować
 zrelatywizować
@@ -14497,6 +14776,7 @@ zrewanżować
 zrewidować
 zrewizytować
 zrewoltować
+zrewolucjonizować
 zrezygnować
 zrogować
 zrolować
@@ -14519,6 +14799,7 @@ zsanować
 zsemityzować
 zsolidaryzować
 zstępować
+zsubiektywizować
 zsumować
 zsumowywać
 zsynchronizować
@@ -14535,6 +14816,7 @@ zszywać
 zukosować
 zunifikować
 zuniformizować
+zuniwersalizować
 zurbanizować
 zutylizować
 zużytkować
