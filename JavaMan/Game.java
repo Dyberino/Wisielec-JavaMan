@@ -7,6 +7,7 @@ import java.awt.event.*;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 
@@ -57,7 +58,7 @@ public class Game{
     }
     public Game(JFrame f, String text){
         this.f=f;
-        this.textToGuess=text.toUpperCase();
+        this.textToGuess=text.toUpperCase().replaceAll(" ", "").replaceAll("[0-9]","");
     }
 
 
@@ -170,6 +171,8 @@ public class Game{
               }
         });
 
+        jlText.setText(engine.getUnhiddenHiddenWordToGuess(textToGuess));
+
         JPanel endingPanelMain = new JPanel();
         endingPanelMain.setFont(new Font("Arial", Font.BOLD, 20));
         endingPanelMain.setForeground(Color.BLACK);
@@ -246,17 +249,21 @@ public class Game{
 
 
     private void addToBadCharacter(Character c){
-        JLabel jlBadCharacter = new JLabel();
-        jlBadCharacter.setText(textInput.getText().toUpperCase());
-        jlBadCharacter.setFont(new Font("Arial", Font.BOLD, 20));
-        jlBadCharacter.setForeground(Color.gray);
-        jlBadCharacter.setLocale(new Locale("pl", "PL"));
-        jlBadCharacter.setHorizontalAlignment(JLabel.CENTER);
-        jlBadCharacter.setVerticalAlignment(JLabel.BOTTOM);
-
-        jpBadCharacter.add(jlBadCharacter);
-        jpBadCharacter.revalidate();
-        jpBadCharacter.repaint();
+        if(!engine.badguessLetter.contains(textInput.getText().toUpperCase().charAt(0))){
+            JLabel jlBadCharacter = new JLabel();
+            jlBadCharacter.setText(textInput.getText().toUpperCase());
+            jlBadCharacter.setFont(new Font("Arial", Font.BOLD, 20));
+            jlBadCharacter.setForeground(Color.gray);
+            jlBadCharacter.setLocale(new Locale("pl", "PL"));
+            jlBadCharacter.setHorizontalAlignment(JLabel.CENTER);
+            jlBadCharacter.setVerticalAlignment(JLabel.BOTTOM);
+    
+            jpBadCharacter.add(jlBadCharacter);
+            engine.badguessLetter.add(textInput.getText().toUpperCase().charAt(0));
+            jpBadCharacter.revalidate();
+            jpBadCharacter.repaint();
+        }
+        
         changeActualImage();
     }
     private void addToCorrectCharacter(Character c){
@@ -275,9 +282,12 @@ public class Game{
     private List<ImageIcon> getHangManImagesList() {
         List<ImageIcon> images = new ArrayList<ImageIcon>();
         File folder = new File("JavaMan/HangManImages");
+        File[] foldersImages = folder.listFiles();
         int k = 0;
+        
+        Arrays.sort(foldersImages);
 
-        for (File f : folder.listFiles()) {
+        for (File f : foldersImages) {
             String fileName = f.toString();
             int index = fileName.lastIndexOf('.');
             if (index > 0) {

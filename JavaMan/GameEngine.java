@@ -12,6 +12,7 @@ public class GameEngine {
 
     protected List<Character> guessesLetter = new ArrayList<>();
     protected String wordToGuess;
+    protected List<Character> badguessLetter= new ArrayList<>();
 
 
     public GameEngine(){}
@@ -53,6 +54,18 @@ public class GameEngine {
                 }else{
                     hiddenWord += "_" + " ";
                 }
+            }
+        }
+        return hiddenWord;
+    }
+
+    protected String getUnhiddenHiddenWordToGuess(String word){
+        String hiddenWord = "";
+        for (int i = 0; i < word.length(); i++) {
+            if(i==word.length()-1){
+                hiddenWord += word.charAt(i);
+            }else{
+                hiddenWord += word.charAt(i) + " ";
             }
         }
         return hiddenWord;

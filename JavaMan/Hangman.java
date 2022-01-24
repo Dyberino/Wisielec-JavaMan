@@ -3,8 +3,11 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
 import java.awt.EventQueue;
 
+import javax.imageio.ImageIO;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -25,7 +28,7 @@ public class Hangman{
     private final int menuButtonWidth=200;
     private final int menuButtonHeight=50;
     
-    public Hangman(){
+    public Hangman() {
         // Tworzenie Okna gry
         f = new JFrame("Wisielec");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -111,8 +114,8 @@ public class Hangman{
         text.setHorizontalAlignment(JLabel.CENTER);
         text.setVerticalAlignment(JLabel.CENTER);
         text.setLocale(new Locale("pl", "PL"));
-        String textToJLabel ="Przykładowe info fddsfdsfdjk basbfasf\n sdshdushdi sdsakdhysdus\nuhsud sadgsaudaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaa ";
-        text.setText("<html><body><div style='text-align: center;'>" + textToJLabel + "</div></body></html>");
+        String textToJLabel ="Wisielec jest to gra jedno lub dwu-osobowa, w której komputer bądź użytkownik wymyślają słowo, które gracz literka po literce \npróbuje zgadnąć słowo które jest rozwiązaniem gry.\n Gracz jednak ma tylko 8 podejść, po których wykorzystaniu zostanie narysowany pełen wisielec co jest równozanczne z&nbsp;porażką.<br><br> Rozgrywka polega na podawaniu liter, które jeśli znajdują się w zgadywanym słowie, to uzupełnią się, natomiast jeśli nie to stracisz jedno z ośmiu żyć, a&nbsp;literka która nie znajduje się w słowie zostanie wpisane na listę błędnych liter.";
+        text.setText("<html><body><div style='text-align: center; width: 98%; margin-left: auto; margin-right: auto;'>" + textToJLabel + "</div></body></html>");
         text.setMinimumSize(new Dimension(windowWidth, (windowHeight-2*menuButtonHeight)));
         text.setPreferredSize(new Dimension(windowWidth, (windowHeight-2*menuButtonHeight)));
         // text.setMaximumSize(new Dimension(windowWidth, (windowHeight-menuButtonHeight)));
@@ -154,7 +157,7 @@ public class Hangman{
             textInputSelectGame.setLocale(new Locale("pl","PL"));
             textInputSelectGame.setColumns(14);
             textInputSelectGame.setFont(new Font("Arial", Font.BOLD, 50));
-            textInputSelectGame.setBackground(new Color(230, 230, 230));
+            // textInputSelectGame.setBackground(new Color(230, 230, 230));
             textInputSelectGame.setBorder(BorderFactory.createRaisedBevelBorder());
             textInputSelectGame.setHorizontalAlignment(JTextField.CENTER);
             textInputSelectGame.addActionListener(new RunGameListener());
@@ -179,10 +182,22 @@ public class Hangman{
 
             label2.add(text2);
 
+            JPanel label3 = new JPanel(); 
+
+                JLabel text3 = new JLabel();
+                text3.setHorizontalAlignment(JLabel.CENTER);
+                text3.setVerticalAlignment(JLabel.CENTER);
+                text3.setFont(new Font("Arial", Font.BOLD, 16));
+                text3.setLocale(new Locale("pl", "PL"));
+                text3.setText("Tekst powinien się składać z samych liter");
+
+            label3.add(text3);
+
 
             game2player.add(label);
             game2player.add(textInputSelectGame);
             game2player.add(label2);
+            game2player.add(label3);
 
             f.add(game2player);
         }else{
