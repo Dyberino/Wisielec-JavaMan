@@ -243,10 +243,10 @@ public class Hangman{
         
         @Override
         public void actionPerformed(ActionEvent e) {
-            
-            if(textInputSelectGame.getText().length()>=1){
+            String text = textInputSelectGame.getText().toUpperCase().replaceAll(" ", "").replaceAll("[0-9]","").replaceAll("[\\<\\>\\.\\,\\?\\'\\]\\[\\{\\}\\=\\+\\_\\-\\(\\)\\:\\;\\|\\/\\~\\`\\\"\\\\]","");
+            if(text.length()>=1){
                 clearWindow();
-                Game game = new Game(f,textInputSelectGame.getText());
+                Game game = new Game(f,text);
                 game.RunGame();
                 f.revalidate();
                 f.repaint();

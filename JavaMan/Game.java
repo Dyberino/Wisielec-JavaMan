@@ -58,7 +58,7 @@ public class Game{
     }
     public Game(JFrame f, String text){
         this.f=f;
-        this.textToGuess=text.toUpperCase().replaceAll(" ", "").replaceAll("[0-9]","");
+        this.textToGuess=text;
     }
 
 
