@@ -1,0 +1,770 @@
+public class Start {
+    public static void main(String[] args) {
+        new Hangman();
+    }
+}
+
+
+
+
+
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.io.FileNotFoundException;
+import java.text.Collator;
+import java.util.Scanner;
+import java.util.Locale;
+import java.lang.String;
+
+public class GameEngine {
+
+    protected List<Character> guessesLetter = new ArrayList<>();
+    protected String wordToGuess;
+    protected List<Character> badguessLetter= new ArrayList<>();
+
+
+    public GameEngine(){}
+
+    protected String getWordToGuess(){
+        try{
+            Scanner in = new Scanner(new File("JavaMan/WORDS.txt"), "UTF-8");
+            String word;
+        
+            List<String> words = new ArrayList<>();
+            while (in.hasNextLine()) {
+                words.add(in.nextLine());
+            }
+
+            Random rand = new Random();
+            word = words.get(rand.nextInt(words.size()));
+
+            wordToGuess=word.toUpperCase();
+            return wordToGuess;
+
+        }catch(FileNotFoundException e){
+            System.exit(0);
+        }
+        return "";
+    }
+
+    protected String getHiddenWordToGuess(String word, List<Character> foundLetter) {
+        String hiddenWord = "";
+        for (int i = 0; i < word.length(); i++) {
+            if(i==word.length()-1){
+                if(foundLetter.contains(word.charAt(i))){
+                    hiddenWord += word.charAt(i);
+                }else{
+                    hiddenWord += "_";
+                }
+            }else{
+                if(foundLetter.contains(word.charAt(i))){
+                    hiddenWord += word.charAt(i) + " ";
+                }else{
+                    hiddenWord += "_" + " ";
+                }
+            }
+        }
+        return hiddenWord;
+    }
+
+    protected String getUnhiddenHiddenWordToGuess(String word){
+        String hiddenWord = "";
+        for (int i = 0; i < word.length(); i++) {
+            if(i==word.length()-1){
+                hiddenWord += word.charAt(i);
+            }else{
+                hiddenWord += word.charAt(i) + " ";
+            }
+        }
+        return hiddenWord;
+    }
+
+    protected boolean isLetterInWordToGuess(Character c){
+        if(wordToGuess.indexOf(c)!=-1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+
+    protected boolean isBadEnding(int amountOfFailure){
+        if(amountOfFailure>=8){
+            return true;
+        }
+        return false;
+    }
+    protected boolean isGoodEnding(String hiddenWordToGuess){
+        if(hiddenWordToGuess.contains("_")==false){
+            return true;
+        }
+        return false;
+    }
+}
+
+
+
+
+
+
+
+
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.event.*;
+import java.io.File;
+import java.io.IOException;
+import java.awt.EventQueue;
+
+import javax.imageio.ImageIO;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+import java.util.Locale;
+
+public class Hangman{
+    protected JFrame f;
+    protected JTextField textInputSelectGame = new JTextField("");
+
+    protected final int windowWidth = 900;
+    protected final int windowHeight = 700;
+
+    private final int menuButtonWidth=200;
+    private final int menuButtonHeight=50;
+    
+    public Hangman() {
+        // Tworzenie Okna gry
+        f = new JFrame("Wisielec");
+        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ImageIcon icon = new ImageIcon("JavaMan/icon.png");
+        f.setIconImage(icon.getImage());
+        f.pack();
+        f.setSize(windowWidth, windowHeight);
+        f.setResizable(false);
+        f.setLocationRelativeTo(null);
+        f.setLayout(null);
+        f.setVisible(true);
+
+        StartMenu();
+    }
+    public Hangman(JFrame f){
+        this.f=f;
+        StartMenu();
+    }
+    private void clearWindow(){
+        f.getContentPane().removeAll();
+        // f.removeAll();
+        f.revalidate();
+        f.repaint();
+    }
+
+    private void StartMenu(){
+        clearWindow();
+        JPanel menu = new JPanel();
+        menu.setBounds((int) (windowWidth/2 - menuButtonWidth/2), (int) (windowHeight/2 - (12 * menuButtonHeight/2)), menuButtonWidth, (int)(9.5 * menuButtonHeight)); 
+        // menu.setBackground(Color.CYAN);
+        menu.setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
+
+
+        JLabel logo = new JLabel();
+        ImageIcon icon = new ImageIcon(new ImageIcon("JavaMan/icon.png").getImage().getScaledInstance(menuButtonWidth, 4*menuButtonHeight, Image.SCALE_DEFAULT));
+        logo.setIcon(icon);
+        
+
+        JButton startSingle = new JButton("Single player");
+        startSingle.setPreferredSize(new Dimension(menuButtonWidth, menuButtonHeight));
+        startSingle.addActionListener(new GameListener(1));
+        // startSingle.setBackground(Color.GREEN);
+
+        JButton startMulti = new JButton("Two-player game");
+        startMulti.setPreferredSize(new Dimension(menuButtonWidth, menuButtonHeight));
+        startMulti.addActionListener(new GameListener(2));
+        // startMulti.setBackground(Color.GREEN);
+
+        JButton info = new JButton("Information");
+        info.setPreferredSize(new Dimension(menuButtonWidth, menuButtonHeight));
+        info.addActionListener(new InformationListener());
+        // info.setBackground(Color.GREEN);
+
+        JButton exit = new JButton("Exit");
+        exit.setPreferredSize(new Dimension(menuButtonWidth, menuButtonHeight));
+        exit.addActionListener(new CloseListener());
+        // exit.setBackground(Color.GREEN);
+
+
+
+
+        menu.add(logo);
+        menu.add(startSingle);
+        menu.add(startMulti);
+        menu.add(info);
+        menu.add(exit);
+
+
+        f.add(menu);
+        f.revalidate();
+        f.repaint();
+    }
+
+
+    private void StartInfo(){
+        clearWindow();
+        JPanel info = new JPanel();
+        info.setBounds(0, 0, windowWidth, windowHeight); 
+        // info.setBackground(Color.CYAN);
+        info.setBorder(BorderFactory.createEmptyBorder(0,0,0,0));
+
+        JLabel text = new JLabel();
+        text.setHorizontalAlignment(JLabel.CENTER);
+        text.setVerticalAlignment(JLabel.CENTER);
+        text.setLocale(new Locale("pl", "PL"));
+        String textToJLabel ="Wisielec jest to gra jedno lub dwu-osobowa, w której komputer bądź użytkownik wymyślają słowo, które gracz literka po literce \npróbuje zgadnąć słowo które jest rozwiązaniem gry.\n Gracz jednak ma tylko 8 podejść, po których wykorzystaniu zostanie narysowany pełen wisielec co jest równozanczne z&nbsp;porażką.<br><br> Rozgrywka polega na podawaniu liter, które jeśli znajdują się w zgadywanym słowie, to uzupełnią się, natomiast jeśli nie to stracisz jedno z ośmiu żyć, a&nbsp;literka która nie znajduje się w słowie zostanie wpisane na listę błędnych liter.";
+        text.setText("<html><body><div style='text-align: center; width: 98%; margin-left: auto; margin-right: auto;'>" + textToJLabel + "</div></body></html>");
+        text.setMinimumSize(new Dimension(windowWidth, (windowHeight-2*menuButtonHeight)));
+        text.setPreferredSize(new Dimension(windowWidth, (windowHeight-2*menuButtonHeight)));
+        // text.setMaximumSize(new Dimension(windowWidth, (windowHeight-menuButtonHeight)));
+
+        JButton back = new JButton("Return");
+        back.setPreferredSize(new Dimension(menuButtonWidth, menuButtonHeight));
+        back.addActionListener(new MenuListener());
+        // back.setBackground(Color.GREEN);
+
+        info.add(text);
+        info.add(back);
+
+        f.add(info);
+        f.revalidate();
+        f.repaint();
+    }
+
+    private void SelectGame(int mode){
+        clearWindow();
+
+        if (mode==2){
+            JPanel game2player = new JPanel();
+            game2player.setBounds(windowWidth/2-800/2, windowHeight/2-300/2, 800, 300); 
+            // info.setBackground(Color.CYAN);
+
+            JPanel label = new JPanel(); 
+
+                JLabel text = new JLabel();
+                text.setHorizontalAlignment(JLabel.CENTER);
+                text.setVerticalAlignment(JLabel.CENTER);
+                text.setFont(new Font("Arial", Font.BOLD, 30));
+                text.setLocale(new Locale("pl", "PL"));
+                text.setText("Podaj słowo do odgadnięcia przez drugą osobę:");
+
+            label.add(text);
+            
+            
+            
+            textInputSelectGame.setLocale(new Locale("pl","PL"));
+            textInputSelectGame.setColumns(14);
+            textInputSelectGame.setFont(new Font("Arial", Font.BOLD, 50));
+            // textInputSelectGame.setBackground(new Color(230, 230, 230));
+            textInputSelectGame.setBorder(BorderFactory.createRaisedBevelBorder());
+            textInputSelectGame.setHorizontalAlignment(JTextField.CENTER);
+            textInputSelectGame.addActionListener(new RunGameListener());
+
+            EventQueue.invokeLater(new Runnable() {
+
+                @Override
+                  public void run() {
+                    textInputSelectGame.grabFocus();
+                    textInputSelectGame.requestFocus();
+                  }
+            });
+
+            JPanel label2 = new JPanel(); 
+
+                JLabel text2 = new JLabel();
+                text2.setHorizontalAlignment(JLabel.CENTER);
+                text2.setVerticalAlignment(JLabel.CENTER);
+                text2.setFont(new Font("Arial", Font.BOLD, 16));
+                text2.setLocale(new Locale("pl", "PL"));
+                text2.setText("Po podaniu słowa wciśnij ENTER");
+
+            label2.add(text2);
+
+            JPanel label3 = new JPanel(); 
+
+                JLabel text3 = new JLabel();
+                text3.setHorizontalAlignment(JLabel.CENTER);
+                text3.setVerticalAlignment(JLabel.CENTER);
+                text3.setFont(new Font("Arial", Font.BOLD, 16));
+                text3.setLocale(new Locale("pl", "PL"));
+                text3.setText("Tekst powinien się składać z samych liter");
+
+            label3.add(text3);
+
+
+            game2player.add(label);
+            game2player.add(textInputSelectGame);
+            game2player.add(label2);
+            game2player.add(label3);
+
+            f.add(game2player);
+        }else{
+            Game game = new Game(f);
+            game.RunGame();
+        }
+
+        f.revalidate();
+        f.repaint();
+    }
+
+    
+    private class CloseListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            System.exit(0);
+        }
+    }
+    private class MenuListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            StartMenu();
+        }
+    }
+    private class InformationListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            StartInfo();
+        }
+    }
+
+    private class GameListener implements ActionListener{
+        private int mode;
+        GameListener(int mode){
+            this.mode=mode;
+        }
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            SelectGame(mode);
+        }
+    }
+    private class RunGameListener  implements ActionListener{
+        
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String text = textInputSelectGame.getText().toUpperCase().replaceAll(" ", "").replaceAll("[0-9]","").replaceAll("[\\<\\>\\.\\,\\?\\'\\]\\[\\{\\}\\=\\+\\_\\-\\(\\)\\:\\;\\|\\/\\~\\`\\\"\\\\\\!\\@\\#\\$\\%\\^\\&\\*]","");
+            if(text.length()>=1){
+                clearWindow();
+                Game game = new Game(f,text);
+                game.RunGame();
+                f.revalidate();
+                f.repaint();
+            }
+
+            
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.awt.event.*;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
+
+import javax.lang.model.type.ExecutableType;
+import javax.swing.BorderFactory;
+import javax.swing.CellRendererPane;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
+
+
+public class Game{
+    private final int windowWidth = 900;
+    private final int windowHeight = 700;
+
+    private final int textInputWidth = 80;
+    private final int textInputHeight = 80;
+
+    private final int imageWidth = 350;
+    private final int imageHeight = 350;
+
+    private final int menuButtonWidth=200;
+    private final int menuButtonHeight=50;
+
+    private int amountOfFailure = 0;
+    private String textToGuess="";
+    private String hiddenTextToGuess="";
+
+    private JFrame f = new JFrame();
+    private JTextField textInput = new JTextField("");
+    private JPanel jpBadCharacter = new JPanel();
+    private JLabel jlText = new JLabel();
+    private JLabel jlImage = new JLabel();
+    private JPanel jpImage = new JPanel();
+
+    GameEngine engine;
+
+    public Game(JFrame f){
+        this.f=f;
+    }
+    public Game(JFrame f, String text){
+        this.f=f;
+        this.textToGuess=text;
+    }
+
+
+    public JFrame RunGame() {
+        engine = new GameEngine();
+        amountOfFailure=0;
+        
+        if(textToGuess==""){
+            textToGuess=engine.getWordToGuess();
+        }else{
+            engine.wordToGuess=textToGuess;
+        }
+        System.out.println(textToGuess);
+        hiddenTextToGuess=engine.getHiddenWordToGuess(textToGuess,engine.guessesLetter);
+
+
+
+
+
+
+        // Tworzenie Text Inputu
+        Locale locale = new Locale("pl", "PL");
+        Font fontTextInput = new Font("Arial", Font.BOLD, 50);
+
+        textInput.setBounds(windowWidth / 2 - textInputWidth / 2, windowHeight - (int) (0.25 * (windowHeight)), textInputWidth, textInputHeight);
+        textInput.setLocale(locale);
+        textInput.setColumns(2);
+        textInput.setFont(fontTextInput);
+        textInput.setBackground(new Color(230, 230, 230));
+        textInput.setBorder(BorderFactory.createRaisedBevelBorder());
+        textInput.setHorizontalAlignment(JTextField.CENTER);
+        textInput.addKeyListener(new KeyEvents());
+        textInput.addActionListener(new checkLetterListener());
+        f.add(textInput);
+        
+
+        // Dodawanie obrazków wisielca
+            jlImage.setIcon(getActualHangmanImage());
+            jpImage.add(jlImage);
+            jpImage.setBounds(windowWidth / 2 - imageWidth / 2, (int) (windowHeight * 0.05), imageWidth, imageHeight);
+        f.add(jpImage);
+            
+
+        // Tworzenie wyświetlania słowa
+        
+        jlText.setText(hiddenTextToGuess);
+        jlText.setFont(new Font("Arial", Font.BOLD, 60));
+        jlText.setForeground(Color.BLACK);
+        jlText.setLocale(locale);
+        jlText.setHorizontalAlignment(JLabel.CENTER);
+        jlText.setVerticalAlignment(JLabel.BOTTOM);
+        jlText.setBounds(0, (int) (windowHeight * 0.70) - (int) (windowHeight * 0.10), windowWidth,
+                (int) (windowHeight * 0.10));
+        f.add(jlText);
+
+        // Tworzenie słowa błędne literki
+        JLabel jlBadCharacter = new JLabel();
+
+        jlBadCharacter.setText("Błędne literki");
+        jlBadCharacter.setFont(new Font("Arial", Font.BOLD, 20));
+        jlBadCharacter.setForeground(Color.BLACK);
+        jlBadCharacter.setLocale(locale);
+        jlBadCharacter.setHorizontalAlignment(JLabel.CENTER);
+        jlBadCharacter.setVerticalAlignment(JLabel.BOTTOM);
+        jlBadCharacter.setBounds((int) (windowWidth*0.72), 10, 200, 20);
+        f.add(jlBadCharacter);
+
+        // Tworzenie pola błędne literki
+        jpBadCharacter.setFont(new Font("Arial", Font.BOLD, 20));
+        jpBadCharacter.setForeground(Color.BLACK);
+        jpBadCharacter.setLocale(locale);
+        jpBadCharacter.setBounds((int) (windowWidth*0.72), 35, 200, 400);
+        f.add(jpBadCharacter);
+
+        EventQueue.invokeLater(new Runnable() {
+
+            @Override
+              public void run() {
+                textInput.grabFocus();
+                textInput.requestFocus();
+              }
+         });
+
+        return f;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private void endGame(int mode){
+        EventQueue.invokeLater(new Runnable() {
+
+            @Override
+              public void run() {
+                f.requestFocus();
+              }
+        });
+
+        jlText.setText(engine.getUnhiddenHiddenWordToGuess(textToGuess));
+
+        JPanel endingPanelMain = new JPanel();
+        endingPanelMain.setFont(new Font("Arial", Font.BOLD, 20));
+        endingPanelMain.setForeground(Color.BLACK);
+        endingPanelMain.setLocale(new Locale("pl","PL"));
+        // endingPanelMain.setBackground(Color.BLUE);
+        endingPanelMain.setBounds(windowWidth/2-(menuButtonWidth+100)/2, windowHeight-200, menuButtonWidth+100, 200);
+
+
+
+
+        JLabel endingLabel = new JLabel();
+
+        if(mode==1){
+            endingLabel.setText("Wygrana");
+            endingLabel.setForeground(new Color(70, 143, 46));
+        } 
+        if(mode==0){
+            endingLabel.setText("Przegrana");
+            endingLabel.setForeground(new Color(207, 28, 28));
+        } 
+
+        endingLabel.setLocale(new Locale("pl","PL"));
+        endingLabel.setHorizontalAlignment(JLabel.CENTER);
+        endingLabel.setVerticalAlignment(JLabel.CENTER);
+        endingLabel.setFont(new Font("Arial", Font.BOLD, 60));
+        Border border = endingLabel.getBorder();
+        Border margin = new EmptyBorder(0,0,20,0);
+        endingLabel.setBorder(new CompoundBorder(border, margin));
+
+
+        
+
+        JButton backToMenu = new JButton("Back to manu");
+        backToMenu.setPreferredSize(new Dimension(menuButtonWidth, menuButtonHeight));
+        backToMenu.addActionListener(new BackToMenuListener());
+
+
+
+        endingPanelMain.add(endingLabel);
+        endingPanelMain.add(backToMenu);
+
+        textInput.setVisible(false);
+        f.add(endingPanelMain);
+        f.revalidate();
+        f.repaint();
+    }
+
+
+
+
+
+
+
+
+    private ImageIcon getActualHangmanImage(){
+        List<ImageIcon> imageList = getHangManImagesList();
+        int k = 0;
+        for (ImageIcon im : imageList) {
+            if (amountOfFailure == k) {
+                return im;
+            }
+            k++;
+        }
+        return new ImageIcon();
+    }
+    private void changeActualImage(){
+        jlImage.setIcon(getActualHangmanImage());
+        jlImage.revalidate();
+        jlImage.repaint();
+        jpImage.revalidate();
+        jpImage.repaint();
+    }
+
+
+
+    private void addToBadCharacter(Character c){
+        if(!engine.badguessLetter.contains(textInput.getText().toUpperCase().charAt(0))){
+            JLabel jlBadCharacter = new JLabel();
+            jlBadCharacter.setText(textInput.getText().toUpperCase());
+            jlBadCharacter.setFont(new Font("Arial", Font.BOLD, 20));
+            jlBadCharacter.setForeground(Color.gray);
+            jlBadCharacter.setLocale(new Locale("pl", "PL"));
+            jlBadCharacter.setHorizontalAlignment(JLabel.CENTER);
+            jlBadCharacter.setVerticalAlignment(JLabel.BOTTOM);
+    
+            jpBadCharacter.add(jlBadCharacter);
+            engine.badguessLetter.add(textInput.getText().toUpperCase().charAt(0));
+            jpBadCharacter.revalidate();
+            jpBadCharacter.repaint();
+        }
+        
+        changeActualImage();
+    }
+    private void addToCorrectCharacter(Character c){
+        engine.guessesLetter.add(c);
+        hiddenTextToGuess=engine.getHiddenWordToGuess(textToGuess,engine.guessesLetter);
+        jlText.setText(hiddenTextToGuess);
+        System.out.println(textToGuess);
+        System.out.println(hiddenTextToGuess);
+        jlText.revalidate();
+        jlText.repaint();
+    }
+
+
+
+
+    private List<ImageIcon> getHangManImagesList() {
+        List<ImageIcon> images = new ArrayList<ImageIcon>();
+        File folder = new File("JavaMan/HangManImages");
+        File[] foldersImages = folder.listFiles();
+        int k = 0;
+        
+        Arrays.sort(foldersImages);
+
+        for (File f : foldersImages) {
+            String fileName = f.toString();
+            int index = fileName.lastIndexOf('.');
+            if (index > 0) {
+                String extension = fileName.substring(index + 1);
+                if (f.isFile() && extension.equals("png")) {
+                    images.add(new ImageIcon(f.getPath()));
+                }
+                k++;
+            }
+        }
+        if (k == 0) {
+            JOptionPane.showMessageDialog(null, "Brak obrazków", "Brak obrazków", JOptionPane.ERROR_MESSAGE);
+        }
+        return images;
+    }
+
+    private void haveItMoreThanOneLetter(){
+        if(textInput.getText().length() > 1){
+            textInput.setText("" + textInput.getText().charAt(0));
+        }
+        // System.out.println(textInput.getText().length());
+    }
+
+    private class checkLetterListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String pattern = "[A-ZĄĆĘŁŃÓŚŻŹ]{1}";
+            Color color = new Color(230, 230, 230);
+
+            if (textInput.getText().toUpperCase().matches(pattern)) {
+                System.out.println(textInput.getText().toUpperCase() + ": pop");
+                if(engine.isLetterInWordToGuess(textInput.getText().toUpperCase().charAt(0))){
+                    System.out.println("Jest w tekscie");
+                    addToCorrectCharacter(textInput.getText().toUpperCase().charAt(0));
+                    textInput.setBackground(new Color(0,255,0));
+                    setTimeout(() -> textInput.setBackground(color), 2000);
+                    if(engine.isGoodEnding(hiddenTextToGuess)){
+                        endGame(1);
+                    }
+                }else{
+                    System.out.println("Nie jest w tekscie");
+                    amountOfFailure++;
+                    if(engine.isBadEnding(amountOfFailure)){
+                        endGame(0);
+                    }
+                    addToBadCharacter(textInput.getText().toUpperCase().charAt(0));
+                    textInput.setBackground(new Color(255,0,0));
+                    setTimeout(() -> textInput.setBackground(color), 2000);
+                    
+                }
+            } else {
+                System.out.println(textInput.getText().toUpperCase() + ": Nie pop");
+                
+                textInput.setBackground(new Color(255,0,0));
+                setTimeout(() -> textInput.setBackground(color), 2000);
+
+            }
+            textInput.setText("");
+            System.out.println("ilosc porazek: "+amountOfFailure);
+            f.revalidate();
+            f.repaint();
+        }
+    }
+
+    
+    private class KeyEvents implements KeyListener{
+        public void keyPressed(KeyEvent e) {
+            // System.out.println("presed");
+        }public void keyTyped(KeyEvent e) {
+            // System.out.println("typed");
+        }
+        public void keyReleased(KeyEvent e) {
+            // System.out.println("released");
+            haveItMoreThanOneLetter();
+        }
+    }   
+
+    private static void setTimeout(Runnable runnable, int delay){
+        new Thread(() -> {
+            try {
+                Thread.sleep(delay);
+                runnable.run();
+            }
+            catch (Exception e){
+                System.err.println(e);
+            }
+        }).start();
+    }
+    private class BackToMenuListener implements ActionListener{
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            new Hangman(f);
+        }
+    }
+}
